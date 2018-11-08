@@ -1,0 +1,68 @@
+\hypertarget{classgamelogic_1_1_princess}{}\section{gamelogic.\+Princess Class Reference}
+\label{classgamelogic_1_1_princess}\index{gamelogic.\+Princess@{gamelogic.\+Princess}}
+Inheritance diagram for gamelogic.\+Princess\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgamelogic_1_1_princess}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgamelogic_1_1_princess_ac88224f446cffc47d38047cca0a8e6eb}{Princess}} (\mbox{\hyperlink{classgamelogic_1_1_location}{Location}} location, \mbox{\hyperlink{classgamelogic_1_1_player}{Player}} player)
+\item 
+\mbox{\hyperlink{enumgamelogic_1_1_type}{Type}} \mbox{\hyperlink{classgamelogic_1_1_princess_ad0792f772afda96bdc167331fdf139c5}{get\+Type}} ()
+\item 
+boolean \mbox{\hyperlink{classgamelogic_1_1_princess_a561f424db16e87b085990392ec151db4}{legal\+Movement}} (int toI, int toJ, \mbox{\hyperlink{classgamelogic_1_1_start}{Start}} start, \mbox{\hyperlink{classgamelogic_1_1_player}{Player}} player)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgamelogic_1_1_princess_ac88224f446cffc47d38047cca0a8e6eb}\label{classgamelogic_1_1_princess_ac88224f446cffc47d38047cca0a8e6eb}} 
+\index{gamelogic\+::\+Princess@{gamelogic\+::\+Princess}!Princess@{Princess}}
+\index{Princess@{Princess}!gamelogic\+::\+Princess@{gamelogic\+::\+Princess}}
+\subsubsection{\texorpdfstring{Princess()}{Princess()}}
+{\footnotesize\ttfamily gamelogic.\+Princess.\+Princess (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgamelogic_1_1_location}{Location}}}]{location,  }\item[{\mbox{\hyperlink{classgamelogic_1_1_player}{Player}}}]{player }\end{DoxyParamCaption})}
+
+Constructor for \mbox{\hyperlink{classgamelogic_1_1_prince}{Prince}}. 
+\begin{DoxyParams}{Parameters}
+{\em board} & the board object of the current \mbox{\hyperlink{classgamelogic_1_1_board}{Board}} \\
+\hline
+{\em location} & the location object of the \mbox{\hyperlink{classgamelogic_1_1_board}{Board}} \\
+\hline
+{\em owner} & the Owner object associated with the \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgamelogic_1_1_princess_ad0792f772afda96bdc167331fdf139c5}\label{classgamelogic_1_1_princess_ad0792f772afda96bdc167331fdf139c5}} 
+\index{gamelogic\+::\+Princess@{gamelogic\+::\+Princess}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!gamelogic\+::\+Princess@{gamelogic\+::\+Princess}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumgamelogic_1_1_type}{Type}} gamelogic.\+Princess.\+get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A function that gets the \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} type. \begin{DoxyReturn}{Returns}
+an integer indicating the \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgamelogic_1_1_princess_a561f424db16e87b085990392ec151db4}\label{classgamelogic_1_1_princess_a561f424db16e87b085990392ec151db4}} 
+\index{gamelogic\+::\+Princess@{gamelogic\+::\+Princess}!legal\+Movement@{legal\+Movement}}
+\index{legal\+Movement@{legal\+Movement}!gamelogic\+::\+Princess@{gamelogic\+::\+Princess}}
+\subsubsection{\texorpdfstring{legal\+Movement()}{legalMovement()}}
+{\footnotesize\ttfamily boolean gamelogic.\+Princess.\+legal\+Movement (\begin{DoxyParamCaption}\item[{int}]{toI,  }\item[{int}]{toJ,  }\item[{\mbox{\hyperlink{classgamelogic_1_1_start}{Start}}}]{start,  }\item[{\mbox{\hyperlink{classgamelogic_1_1_player}{Player}}}]{player }\end{DoxyParamCaption})}
+
+check Validmove for \mbox{\hyperlink{classgamelogic_1_1_princess}{Princess}}. 
+\begin{DoxyParams}{Parameters}
+{\em x,designated} & row\textquotesingle{}s location \\
+\hline
+{\em y,designated} & col\textquotesingle{}s location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean = true if it\textquotesingle{}s valid otherwise false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/gamelogic/Princess.\+java\end{DoxyCompactItemize}

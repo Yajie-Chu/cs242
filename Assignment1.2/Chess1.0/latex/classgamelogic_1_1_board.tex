@@ -1,0 +1,121 @@
+\hypertarget{classgamelogic_1_1_board}{}\section{gamelogic.\+Board Class Reference}
+\label{classgamelogic_1_1_board}\index{gamelogic.\+Board@{gamelogic.\+Board}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgamelogic_1_1_board_a00654e3d421a89e0532462dc48d85a25}{Board}} ()
+\item 
+\mbox{\Hypertarget{classgamelogic_1_1_board_a3db0438a1ed6c0bbfd5c35403a4a8a88}\label{classgamelogic_1_1_board_a3db0438a1ed6c0bbfd5c35403a4a8a88}} 
+\mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries get\+Board} ()
+\item 
+void \mbox{\hyperlink{classgamelogic_1_1_board_a8173f158887a169056c7b1e39cc1885d}{new\+Piece}} (\mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} piece)
+\item 
+void \mbox{\hyperlink{classgamelogic_1_1_board_acc3de86741f4e9cec9b31c544937333d}{add\+Piece}} (\mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} piece, \mbox{\hyperlink{classgamelogic_1_1_location}{Location}} location)
+\item 
+void \mbox{\hyperlink{classgamelogic_1_1_board_ad538e51550a585d1465d76d92f3ddd10}{remove\+Piece}} (\mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} piece)
+\item 
+void \mbox{\hyperlink{classgamelogic_1_1_board_ab7bfac3d534d441e6ebbd1adef05659b}{move\+Piece}} (\mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} piece, \mbox{\hyperlink{classgamelogic_1_1_location}{Location}} location, \mbox{\hyperlink{classgamelogic_1_1_start}{Start}} start, \mbox{\hyperlink{classgamelogic_1_1_player}{Player}} player)
+\item 
+\mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} \mbox{\hyperlink{classgamelogic_1_1_board_ab53a8d50f60e7127e633fd4843e8c20c}{get\+Piece}} (int x, int y)
+\item 
+\mbox{\Hypertarget{classgamelogic_1_1_board_abc340155b9d2bdb65596446782461e23}\label{classgamelogic_1_1_board_abc340155b9d2bdb65596446782461e23}} 
+boolean {\bfseries checked\+Knight} (\mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} p, \mbox{\hyperlink{classgamelogic_1_1_start}{Start}} start, \mbox{\hyperlink{classgamelogic_1_1_player}{Player}} player)
+\item 
+\mbox{\Hypertarget{classgamelogic_1_1_board_aec8b979bfaf8320644667436411499d4}\label{classgamelogic_1_1_board_aec8b979bfaf8320644667436411499d4}} 
+boolean {\bfseries checked\+Diagonal} (\mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} p, \mbox{\hyperlink{classgamelogic_1_1_start}{Start}} start, \mbox{\hyperlink{classgamelogic_1_1_player}{Player}} player)
+\item 
+\mbox{\Hypertarget{classgamelogic_1_1_board_a345735c653c636c63e5d4a1c312ed52e}\label{classgamelogic_1_1_board_a345735c653c636c63e5d4a1c312ed52e}} 
+boolean {\bfseries checked\+Straight} (\mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} piece, \mbox{\hyperlink{classgamelogic_1_1_start}{Start}} start, \mbox{\hyperlink{classgamelogic_1_1_player}{Player}} player)
+\item 
+\mbox{\Hypertarget{classgamelogic_1_1_board_a8f3209c457b8aac5858e2c4afe3aba40}\label{classgamelogic_1_1_board_a8f3209c457b8aac5858e2c4afe3aba40}} 
+boolean {\bfseries ischecked} (\mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} p, \mbox{\hyperlink{classgamelogic_1_1_start}{Start}} start, \mbox{\hyperlink{classgamelogic_1_1_player}{Player}} player)
+\item 
+\mbox{\Hypertarget{classgamelogic_1_1_board_aebde91e5d27a19818613c722f3741054}\label{classgamelogic_1_1_board_aebde91e5d27a19818613c722f3741054}} 
+boolean {\bfseries is\+Checked\+Mate} (\mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} p, \mbox{\hyperlink{classgamelogic_1_1_start}{Start}} start, \mbox{\hyperlink{classgamelogic_1_1_player}{Player}} player)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgamelogic_1_1_board_a00654e3d421a89e0532462dc48d85a25}\label{classgamelogic_1_1_board_a00654e3d421a89e0532462dc48d85a25}} 
+\index{gamelogic\+::\+Board@{gamelogic\+::\+Board}!Board@{Board}}
+\index{Board@{Board}!gamelogic\+::\+Board@{gamelogic\+::\+Board}}
+\subsubsection{\texorpdfstring{Board()}{Board()}}
+{\footnotesize\ttfamily gamelogic.\+Board.\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor for the chess board. 
+\begin{DoxyParams}{Parameters}
+{\em Empty} & create 2D array of size 8x8 \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgamelogic_1_1_board_acc3de86741f4e9cec9b31c544937333d}\label{classgamelogic_1_1_board_acc3de86741f4e9cec9b31c544937333d}} 
+\index{gamelogic\+::\+Board@{gamelogic\+::\+Board}!add\+Piece@{add\+Piece}}
+\index{add\+Piece@{add\+Piece}!gamelogic\+::\+Board@{gamelogic\+::\+Board}}
+\subsubsection{\texorpdfstring{add\+Piece()}{addPiece()}}
+{\footnotesize\ttfamily void gamelogic.\+Board.\+add\+Piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}}}]{piece,  }\item[{\mbox{\hyperlink{classgamelogic_1_1_location}{Location}}}]{location }\end{DoxyParamCaption})}
+
+Function to add piece to current tiles 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}}} & the \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} object \\
+\hline
+{\em \mbox{\hyperlink{classgamelogic_1_1_location}{Location}}} & the location object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgamelogic_1_1_board_ab53a8d50f60e7127e633fd4843e8c20c}\label{classgamelogic_1_1_board_ab53a8d50f60e7127e633fd4843e8c20c}} 
+\index{gamelogic\+::\+Board@{gamelogic\+::\+Board}!get\+Piece@{get\+Piece}}
+\index{get\+Piece@{get\+Piece}!gamelogic\+::\+Board@{gamelogic\+::\+Board}}
+\subsubsection{\texorpdfstring{get\+Piece()}{getPiece()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} gamelogic.\+Board.\+get\+Piece (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Function from \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} class to retrieve the arrays. 
+\begin{DoxyParams}{Parameters}
+{\em x} & the Row\textquotesingle{}s coordinate \\
+\hline
+{\em y} & the Col\textquotesingle{}s coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the tiles if it\textquotesingle{}s not out-\/of-\/bound 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgamelogic_1_1_board_ab7bfac3d534d441e6ebbd1adef05659b}\label{classgamelogic_1_1_board_ab7bfac3d534d441e6ebbd1adef05659b}} 
+\index{gamelogic\+::\+Board@{gamelogic\+::\+Board}!move\+Piece@{move\+Piece}}
+\index{move\+Piece@{move\+Piece}!gamelogic\+::\+Board@{gamelogic\+::\+Board}}
+\subsubsection{\texorpdfstring{move\+Piece()}{movePiece()}}
+{\footnotesize\ttfamily void gamelogic.\+Board.\+move\+Piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}}}]{piece,  }\item[{\mbox{\hyperlink{classgamelogic_1_1_location}{Location}}}]{location,  }\item[{\mbox{\hyperlink{classgamelogic_1_1_start}{Start}}}]{start,  }\item[{\mbox{\hyperlink{classgamelogic_1_1_player}{Player}}}]{player }\end{DoxyParamCaption})}
+
+Function to move piece 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}}} & the \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} object \\
+\hline
+{\em \mbox{\hyperlink{classgamelogic_1_1_location}{Location}}} & the location object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgamelogic_1_1_board_a8173f158887a169056c7b1e39cc1885d}\label{classgamelogic_1_1_board_a8173f158887a169056c7b1e39cc1885d}} 
+\index{gamelogic\+::\+Board@{gamelogic\+::\+Board}!new\+Piece@{new\+Piece}}
+\index{new\+Piece@{new\+Piece}!gamelogic\+::\+Board@{gamelogic\+::\+Board}}
+\subsubsection{\texorpdfstring{new\+Piece()}{newPiece()}}
+{\footnotesize\ttfamily void gamelogic.\+Board.\+new\+Piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}}}]{piece }\end{DoxyParamCaption})}
+
+function to initialize piece 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}}} & get the piece types \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgamelogic_1_1_board_ad538e51550a585d1465d76d92f3ddd10}\label{classgamelogic_1_1_board_ad538e51550a585d1465d76d92f3ddd10}} 
+\index{gamelogic\+::\+Board@{gamelogic\+::\+Board}!remove\+Piece@{remove\+Piece}}
+\index{remove\+Piece@{remove\+Piece}!gamelogic\+::\+Board@{gamelogic\+::\+Board}}
+\subsubsection{\texorpdfstring{remove\+Piece()}{removePiece()}}
+{\footnotesize\ttfamily void gamelogic.\+Board.\+remove\+Piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}}}]{piece }\end{DoxyParamCaption})}
+
+Function to remove piece add current tiles 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}}} & the \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} object \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/gamelogic/Board.\+java\end{DoxyCompactItemize}

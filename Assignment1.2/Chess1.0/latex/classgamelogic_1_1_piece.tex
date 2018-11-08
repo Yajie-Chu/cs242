@@ -1,0 +1,158 @@
+\hypertarget{classgamelogic_1_1_piece}{}\section{gamelogic.\+Piece Class Reference}
+\label{classgamelogic_1_1_piece}\index{gamelogic.\+Piece@{gamelogic.\+Piece}}
+Inheritance diagram for gamelogic.\+Piece\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classgamelogic_1_1_piece}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgamelogic_1_1_piece_ab0442f319debc38a447e0e7f7ba3bbf8}{Piece}} (\mbox{\hyperlink{classgamelogic_1_1_location}{Location}} location, \mbox{\hyperlink{classgamelogic_1_1_player}{Player}} player)
+\item 
+\mbox{\hyperlink{classgamelogic_1_1_location}{Location}} \mbox{\hyperlink{classgamelogic_1_1_piece_a606b1bef122f221d40a88e7b79d54b00}{get\+Location}} ()
+\item 
+\mbox{\hyperlink{classgamelogic_1_1_player}{Player}} \mbox{\hyperlink{classgamelogic_1_1_piece_a8e8a7aef1b872104c0d6dd6c31474794}{get\+Player}} ()
+\item 
+\mbox{\Hypertarget{classgamelogic_1_1_piece_af107a61ff3bf8e4641a5bfd0501dbf67}\label{classgamelogic_1_1_piece_af107a61ff3bf8e4641a5bfd0501dbf67}} 
+void {\bfseries set\+Location} (\mbox{\hyperlink{classgamelogic_1_1_location}{Location}} location)
+\item 
+abstract \mbox{\hyperlink{enumgamelogic_1_1_type}{Type}} \mbox{\hyperlink{classgamelogic_1_1_piece_ada7c47c213e0f2271fbab7432cf6de51}{get\+Type}} ()
+\item 
+abstract boolean \mbox{\hyperlink{classgamelogic_1_1_piece_a443a86d99dabcd09c637cca2344ae3bd}{legal\+Movement}} (int toI, int toJ, \mbox{\hyperlink{classgamelogic_1_1_start}{Start}} start, \mbox{\hyperlink{classgamelogic_1_1_player}{Player}} player)
+\item 
+\mbox{\Hypertarget{classgamelogic_1_1_piece_ae2db48886123d42187139328c1b0005a}\label{classgamelogic_1_1_piece_ae2db48886123d42187139328c1b0005a}} 
+boolean {\bfseries check\+Movement} (int toI, int toJ, \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} piece, \mbox{\hyperlink{classgamelogic_1_1_start}{Start}} start, \mbox{\hyperlink{classgamelogic_1_1_player}{Player}} player)
+\item 
+boolean \mbox{\hyperlink{classgamelogic_1_1_piece_a8a07aab5b997bd7b889e5eb1c72622b0}{is\+Out\+Of\+Bound}} (int i, int j)
+\item 
+boolean \mbox{\hyperlink{classgamelogic_1_1_piece_a001ebd45357d11f8b742a27b5f358db9}{is\+Path\+Diagonal\+Clear}} (int toI, int toJ, int fromI, int fromJ, \mbox{\hyperlink{classgamelogic_1_1_start}{Start}} start, \mbox{\hyperlink{classgamelogic_1_1_player}{Player}} player)
+\item 
+boolean \mbox{\hyperlink{classgamelogic_1_1_piece_a3b13e1bdba1f3db5f9e8e5d219599d6c}{is\+Path\+Straight\+Clear}} (int toI, int toJ, int fromI, int fromJ, \mbox{\hyperlink{classgamelogic_1_1_start}{Start}} start, \mbox{\hyperlink{classgamelogic_1_1_player}{Player}} player)
+\item 
+\mbox{\Hypertarget{classgamelogic_1_1_piece_a4b84a20156cfa3c64362a19150ab35ce}\label{classgamelogic_1_1_piece_a4b84a20156cfa3c64362a19150ab35ce}} 
+boolean {\bfseries equals} (\mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} other)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgamelogic_1_1_piece_ab0442f319debc38a447e0e7f7ba3bbf8}\label{classgamelogic_1_1_piece_ab0442f319debc38a447e0e7f7ba3bbf8}} 
+\index{gamelogic\+::\+Piece@{gamelogic\+::\+Piece}!Piece@{Piece}}
+\index{Piece@{Piece}!gamelogic\+::\+Piece@{gamelogic\+::\+Piece}}
+\subsubsection{\texorpdfstring{Piece()}{Piece()}}
+{\footnotesize\ttfamily gamelogic.\+Piece.\+Piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgamelogic_1_1_location}{Location}}}]{location,  }\item[{\mbox{\hyperlink{classgamelogic_1_1_player}{Player}}}]{player }\end{DoxyParamCaption})}
+
+Constructor for a \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}}. 
+\begin{DoxyParams}{Parameters}
+{\em board} & the board object of the \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} \\
+\hline
+{\em location} & the location object of the \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} \\
+\hline
+{\em owner} & the Owner object associated with the \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgamelogic_1_1_piece_a606b1bef122f221d40a88e7b79d54b00}\label{classgamelogic_1_1_piece_a606b1bef122f221d40a88e7b79d54b00}} 
+\index{gamelogic\+::\+Piece@{gamelogic\+::\+Piece}!get\+Location@{get\+Location}}
+\index{get\+Location@{get\+Location}!gamelogic\+::\+Piece@{gamelogic\+::\+Piece}}
+\subsubsection{\texorpdfstring{get\+Location()}{getLocation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgamelogic_1_1_location}{Location}} gamelogic.\+Piece.\+get\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A function getter that gets the location \begin{DoxyReturn}{Returns}
+the location object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgamelogic_1_1_piece_a8e8a7aef1b872104c0d6dd6c31474794}\label{classgamelogic_1_1_piece_a8e8a7aef1b872104c0d6dd6c31474794}} 
+\index{gamelogic\+::\+Piece@{gamelogic\+::\+Piece}!get\+Player@{get\+Player}}
+\index{get\+Player@{get\+Player}!gamelogic\+::\+Piece@{gamelogic\+::\+Piece}}
+\subsubsection{\texorpdfstring{get\+Player()}{getPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgamelogic_1_1_player}{Player}} gamelogic.\+Piece.\+get\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A function getter that gets the player \begin{DoxyReturn}{Returns}
+the player object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgamelogic_1_1_piece_ada7c47c213e0f2271fbab7432cf6de51}\label{classgamelogic_1_1_piece_ada7c47c213e0f2271fbab7432cf6de51}} 
+\index{gamelogic\+::\+Piece@{gamelogic\+::\+Piece}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!gamelogic\+::\+Piece@{gamelogic\+::\+Piece}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{enumgamelogic_1_1_type}{Type}} gamelogic.\+Piece.\+get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+An abstract function that returns the type of a \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}}. \mbox{\Hypertarget{classgamelogic_1_1_piece_a8a07aab5b997bd7b889e5eb1c72622b0}\label{classgamelogic_1_1_piece_a8a07aab5b997bd7b889e5eb1c72622b0}} 
+\index{gamelogic\+::\+Piece@{gamelogic\+::\+Piece}!is\+Out\+Of\+Bound@{is\+Out\+Of\+Bound}}
+\index{is\+Out\+Of\+Bound@{is\+Out\+Of\+Bound}!gamelogic\+::\+Piece@{gamelogic\+::\+Piece}}
+\subsubsection{\texorpdfstring{is\+Out\+Of\+Bound()}{isOutOfBound()}}
+{\footnotesize\ttfamily boolean gamelogic.\+Piece.\+is\+Out\+Of\+Bound (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+Function to check out-\/of-\/boundary. 
+\begin{DoxyParams}{Parameters}
+{\em i} & the Row\textquotesingle{}s coordinate \\
+\hline
+{\em j} & the Col\textquotesingle{}s coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it is out-\/of-\/boundary, otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgamelogic_1_1_piece_a001ebd45357d11f8b742a27b5f358db9}\label{classgamelogic_1_1_piece_a001ebd45357d11f8b742a27b5f358db9}} 
+\index{gamelogic\+::\+Piece@{gamelogic\+::\+Piece}!is\+Path\+Diagonal\+Clear@{is\+Path\+Diagonal\+Clear}}
+\index{is\+Path\+Diagonal\+Clear@{is\+Path\+Diagonal\+Clear}!gamelogic\+::\+Piece@{gamelogic\+::\+Piece}}
+\subsubsection{\texorpdfstring{is\+Path\+Diagonal\+Clear()}{isPathDiagonalClear()}}
+{\footnotesize\ttfamily boolean gamelogic.\+Piece.\+is\+Path\+Diagonal\+Clear (\begin{DoxyParamCaption}\item[{int}]{toI,  }\item[{int}]{toJ,  }\item[{int}]{fromI,  }\item[{int}]{fromJ,  }\item[{\mbox{\hyperlink{classgamelogic_1_1_start}{Start}}}]{start,  }\item[{\mbox{\hyperlink{classgamelogic_1_1_player}{Player}}}]{player }\end{DoxyParamCaption})}
+
+Function to check Diagonal path. 
+\begin{DoxyParams}{Parameters}
+{\em toI} & the designated X coordinate \\
+\hline
+{\em toJ} & the designated Y coordinate \\
+\hline
+{\em fromI} & the current X coordinate \\
+\hline
+{\em fromJ} & the current Y coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it is out-\/of-\/boundary, otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgamelogic_1_1_piece_a3b13e1bdba1f3db5f9e8e5d219599d6c}\label{classgamelogic_1_1_piece_a3b13e1bdba1f3db5f9e8e5d219599d6c}} 
+\index{gamelogic\+::\+Piece@{gamelogic\+::\+Piece}!is\+Path\+Straight\+Clear@{is\+Path\+Straight\+Clear}}
+\index{is\+Path\+Straight\+Clear@{is\+Path\+Straight\+Clear}!gamelogic\+::\+Piece@{gamelogic\+::\+Piece}}
+\subsubsection{\texorpdfstring{is\+Path\+Straight\+Clear()}{isPathStraightClear()}}
+{\footnotesize\ttfamily boolean gamelogic.\+Piece.\+is\+Path\+Straight\+Clear (\begin{DoxyParamCaption}\item[{int}]{toI,  }\item[{int}]{toJ,  }\item[{int}]{fromI,  }\item[{int}]{fromJ,  }\item[{\mbox{\hyperlink{classgamelogic_1_1_start}{Start}}}]{start,  }\item[{\mbox{\hyperlink{classgamelogic_1_1_player}{Player}}}]{player }\end{DoxyParamCaption})}
+
+Function to check vertical and horizontal path. 
+\begin{DoxyParams}{Parameters}
+{\em toI} & the designated X coordinate \\
+\hline
+{\em toJ} & the designated Y coordinate \\
+\hline
+{\em fromI} & the current X coordinate \\
+\hline
+{\em fromJ} & the current Y coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it is out-\/of-\/boundary, otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgamelogic_1_1_piece_a443a86d99dabcd09c637cca2344ae3bd}\label{classgamelogic_1_1_piece_a443a86d99dabcd09c637cca2344ae3bd}} 
+\index{gamelogic\+::\+Piece@{gamelogic\+::\+Piece}!legal\+Movement@{legal\+Movement}}
+\index{legal\+Movement@{legal\+Movement}!gamelogic\+::\+Piece@{gamelogic\+::\+Piece}}
+\subsubsection{\texorpdfstring{legal\+Movement()}{legalMovement()}}
+{\footnotesize\ttfamily abstract boolean gamelogic.\+Piece.\+legal\+Movement (\begin{DoxyParamCaption}\item[{int}]{toI,  }\item[{int}]{toJ,  }\item[{\mbox{\hyperlink{classgamelogic_1_1_start}{Start}}}]{start,  }\item[{\mbox{\hyperlink{classgamelogic_1_1_player}{Player}}}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Abstract function that is shared among the Pieces type to check if it\textquotesingle{}s a valid move 
+\begin{DoxyParams}{Parameters}
+{\em toI} & the row\textquotesingle{}s designated location \\
+\hline
+{\em toJ} & the col\textquotesingle{}s designated location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a boolean indicating whether the path is valid 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/gamelogic/Piece.\+java\end{DoxyCompactItemize}

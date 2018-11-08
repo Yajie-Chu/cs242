@@ -1,0 +1,68 @@
+\hypertarget{classgamelogic_1_1_pawn}{}\section{gamelogic.\+Pawn Class Reference}
+\label{classgamelogic_1_1_pawn}\index{gamelogic.\+Pawn@{gamelogic.\+Pawn}}
+Inheritance diagram for gamelogic.\+Pawn\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgamelogic_1_1_pawn}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgamelogic_1_1_pawn_a6ca804bf25a83fe84b36eff001737238}{Pawn}} (\mbox{\hyperlink{classgamelogic_1_1_location}{Location}} location, \mbox{\hyperlink{classgamelogic_1_1_player}{Player}} player)
+\item 
+\mbox{\hyperlink{enumgamelogic_1_1_type}{Type}} \mbox{\hyperlink{classgamelogic_1_1_pawn_aacb3217a868c5d3dbd98f4f96b6a7c5e}{get\+Type}} ()
+\item 
+boolean \mbox{\hyperlink{classgamelogic_1_1_pawn_abb8252d13a8a01c9412722543051cf37}{legal\+Movement}} (int toI, int toJ, \mbox{\hyperlink{classgamelogic_1_1_start}{Start}} start, \mbox{\hyperlink{classgamelogic_1_1_player}{Player}} player)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgamelogic_1_1_pawn_a6ca804bf25a83fe84b36eff001737238}\label{classgamelogic_1_1_pawn_a6ca804bf25a83fe84b36eff001737238}} 
+\index{gamelogic\+::\+Pawn@{gamelogic\+::\+Pawn}!Pawn@{Pawn}}
+\index{Pawn@{Pawn}!gamelogic\+::\+Pawn@{gamelogic\+::\+Pawn}}
+\subsubsection{\texorpdfstring{Pawn()}{Pawn()}}
+{\footnotesize\ttfamily gamelogic.\+Pawn.\+Pawn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgamelogic_1_1_location}{Location}}}]{location,  }\item[{\mbox{\hyperlink{classgamelogic_1_1_player}{Player}}}]{player }\end{DoxyParamCaption})}
+
+Constructor for \mbox{\hyperlink{classgamelogic_1_1_pawn}{Pawn}}. 
+\begin{DoxyParams}{Parameters}
+{\em board} & the board object of the current \mbox{\hyperlink{classgamelogic_1_1_board}{Board}} \\
+\hline
+{\em location} & the location object of the \mbox{\hyperlink{classgamelogic_1_1_board}{Board}} \\
+\hline
+{\em owner} & the Owner object associated with the \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgamelogic_1_1_pawn_aacb3217a868c5d3dbd98f4f96b6a7c5e}\label{classgamelogic_1_1_pawn_aacb3217a868c5d3dbd98f4f96b6a7c5e}} 
+\index{gamelogic\+::\+Pawn@{gamelogic\+::\+Pawn}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!gamelogic\+::\+Pawn@{gamelogic\+::\+Pawn}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumgamelogic_1_1_type}{Type}} gamelogic.\+Pawn.\+get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A function that gets the \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} type. \begin{DoxyReturn}{Returns}
+an integer indicating the \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgamelogic_1_1_pawn_abb8252d13a8a01c9412722543051cf37}\label{classgamelogic_1_1_pawn_abb8252d13a8a01c9412722543051cf37}} 
+\index{gamelogic\+::\+Pawn@{gamelogic\+::\+Pawn}!legal\+Movement@{legal\+Movement}}
+\index{legal\+Movement@{legal\+Movement}!gamelogic\+::\+Pawn@{gamelogic\+::\+Pawn}}
+\subsubsection{\texorpdfstring{legal\+Movement()}{legalMovement()}}
+{\footnotesize\ttfamily boolean gamelogic.\+Pawn.\+legal\+Movement (\begin{DoxyParamCaption}\item[{int}]{toI,  }\item[{int}]{toJ,  }\item[{\mbox{\hyperlink{classgamelogic_1_1_start}{Start}}}]{start,  }\item[{\mbox{\hyperlink{classgamelogic_1_1_player}{Player}}}]{player }\end{DoxyParamCaption})}
+
+check Validmove for \mbox{\hyperlink{classgamelogic_1_1_pawn}{Pawn}}. 
+\begin{DoxyParams}{Parameters}
+{\em toI,designated} & row\textquotesingle{}s location \\
+\hline
+{\em toJ,designated} & col\textquotesingle{}s location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean = true if it\textquotesingle{}s valid otherwise false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/gamelogic/Pawn.\+java\end{DoxyCompactItemize}

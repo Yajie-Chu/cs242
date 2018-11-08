@@ -1,0 +1,68 @@
+\hypertarget{classgamelogic_1_1_prince}{}\section{gamelogic.\+Prince Class Reference}
+\label{classgamelogic_1_1_prince}\index{gamelogic.\+Prince@{gamelogic.\+Prince}}
+Inheritance diagram for gamelogic.\+Prince\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgamelogic_1_1_prince}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgamelogic_1_1_prince_a7f45f9e01612930edfdaeb05a4f49f60}{Prince}} (\mbox{\hyperlink{classgamelogic_1_1_location}{Location}} location, \mbox{\hyperlink{classgamelogic_1_1_player}{Player}} player)
+\item 
+\mbox{\hyperlink{enumgamelogic_1_1_type}{Type}} \mbox{\hyperlink{classgamelogic_1_1_prince_aeb9994d7627fc4ff2e17844fefde51e3}{get\+Type}} ()
+\item 
+boolean \mbox{\hyperlink{classgamelogic_1_1_prince_a52427dfdfb25376c2435ada360e3a14c}{legal\+Movement}} (int toI, int toJ, \mbox{\hyperlink{classgamelogic_1_1_start}{Start}} start, \mbox{\hyperlink{classgamelogic_1_1_player}{Player}} player)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgamelogic_1_1_prince_a7f45f9e01612930edfdaeb05a4f49f60}\label{classgamelogic_1_1_prince_a7f45f9e01612930edfdaeb05a4f49f60}} 
+\index{gamelogic\+::\+Prince@{gamelogic\+::\+Prince}!Prince@{Prince}}
+\index{Prince@{Prince}!gamelogic\+::\+Prince@{gamelogic\+::\+Prince}}
+\subsubsection{\texorpdfstring{Prince()}{Prince()}}
+{\footnotesize\ttfamily gamelogic.\+Prince.\+Prince (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgamelogic_1_1_location}{Location}}}]{location,  }\item[{\mbox{\hyperlink{classgamelogic_1_1_player}{Player}}}]{player }\end{DoxyParamCaption})}
+
+Constructor for \mbox{\hyperlink{classgamelogic_1_1_prince}{Prince}}. 
+\begin{DoxyParams}{Parameters}
+{\em board} & the board object of the current \mbox{\hyperlink{classgamelogic_1_1_board}{Board}} \\
+\hline
+{\em location} & the location object of the \mbox{\hyperlink{classgamelogic_1_1_board}{Board}} \\
+\hline
+{\em owner} & the Owner object associated with the \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgamelogic_1_1_prince_aeb9994d7627fc4ff2e17844fefde51e3}\label{classgamelogic_1_1_prince_aeb9994d7627fc4ff2e17844fefde51e3}} 
+\index{gamelogic\+::\+Prince@{gamelogic\+::\+Prince}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!gamelogic\+::\+Prince@{gamelogic\+::\+Prince}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumgamelogic_1_1_type}{Type}} gamelogic.\+Prince.\+get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A function that gets the \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} type. \begin{DoxyReturn}{Returns}
+an integer indicating the \mbox{\hyperlink{classgamelogic_1_1_piece}{Piece}} type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgamelogic_1_1_prince_a52427dfdfb25376c2435ada360e3a14c}\label{classgamelogic_1_1_prince_a52427dfdfb25376c2435ada360e3a14c}} 
+\index{gamelogic\+::\+Prince@{gamelogic\+::\+Prince}!legal\+Movement@{legal\+Movement}}
+\index{legal\+Movement@{legal\+Movement}!gamelogic\+::\+Prince@{gamelogic\+::\+Prince}}
+\subsubsection{\texorpdfstring{legal\+Movement()}{legalMovement()}}
+{\footnotesize\ttfamily boolean gamelogic.\+Prince.\+legal\+Movement (\begin{DoxyParamCaption}\item[{int}]{toI,  }\item[{int}]{toJ,  }\item[{\mbox{\hyperlink{classgamelogic_1_1_start}{Start}}}]{start,  }\item[{\mbox{\hyperlink{classgamelogic_1_1_player}{Player}}}]{player }\end{DoxyParamCaption})}
+
+check Validmove for \mbox{\hyperlink{classgamelogic_1_1_prince}{Prince}}. 
+\begin{DoxyParams}{Parameters}
+{\em x,designated} & row\textquotesingle{}s location \\
+\hline
+{\em y,designated} & col\textquotesingle{}s location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean = true if it\textquotesingle{}s valid otherwise false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/gamelogic/Prince.\+java\end{DoxyCompactItemize}

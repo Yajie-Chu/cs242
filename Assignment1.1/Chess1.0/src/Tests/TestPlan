@@ -1,0 +1,7 @@
+Part V:
+
+My Test Plan
+
+1. Open Chess1.0 Project
+2. Go to Gui package and run Table.Java
+3. Check whether each pieces are correctly positioned and tiles are colored accordingly.
